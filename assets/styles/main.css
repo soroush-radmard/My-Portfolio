@@ -21,10 +21,6 @@ a{
     text-decoration: none;
 }
 
-h3,h1{
-    color: #326789;
-}
-
 .container {
     max-width: 70rem;
     margin-right: auto;
@@ -34,37 +30,191 @@ h3,h1{
     overflow: hidden;
 }
 
+/* landing section */
+
 .landing-section{
-    background-image: url(/assets/images/landing-img3.png);
+    background-image: url(/assets/images/landing-img4.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
 }
 
-.headline-section{
-
+.wrapper{
+    background: #10072096;
+    height: 100vh;
 }
 
 .headline-section .text{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 85vh;
+}
+
+.headline-section .text .text-wrapper{
+    color: rgb(239, 230, 230);
+    text-shadow: 0 0 1rem #31087B;
+}
+
+.headline-section .text .text-wrapper h3{
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.headline-section .text .text-wrapper h3 span{
+    font-weight: lighter;
+}
+
+.headline-section .text .text-wrapper h1{
+    font-size: 1.4rem;
+    display: block;
+}
+
+/* aboutme section */
+
+.a{
+    background-color: rgba(49, 8, 123, .6);
+}
+
+.aboutme-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutme-section>.right-side{
+    padding: 6rem 0;
+}
+
+.aboutme-section>.right-side .tab-section{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+    backdrop-filter: blur(.3125rem) saturate(100%);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 1.33rem;
+    border: .0625rem solid rgba(255, 255, 255, 0.125);
+    max-width: 32rem;
+    text-align: justify;
+    color: #28282B;
+}
+
+.aboutme-section>.right-side>.tab-section>.title-section{
+    line-height: 2.5rem;
+}
+
+.aboutme-section>.right-side>.tab-section>.title-section>h3{
+    font-size: 1.6rem;
+    margin: .7rem 0;
+}
+
+.aboutme-section>.right-side>.tab-section>.title-section>h3 span{
+    margin-right: 1.7rem;
+}
+
+.aboutme-section>.right-side>.tab-section .description-section{
+    line-height: 1.9rem;
+}
+
+.aboutme-section>.right-side>.tab-section .description-section p{
     
 }
 
-.headline-section .text .up-side{
+.aboutme-section>.right-side>.tab-section .button-section{
     
 }
 
-.headline-section .text .up-side h3{
+.btn{
+    padding: .5rem 1.3rem;
+    border-radius: 1.2rem;
+    background-color: transparent;
+    outline: none;
+    border: .125rem solid #100720;
+    transition: background-color .2s, color .2s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #100720;
+    color: #fff;
+}
+
+.aboutme-section>.left-side{
     
 }
 
-.headline-section .text .up-side h1{
+.aboutme-section>.left-side>.img-wrapper{
     
 }
 
-.headline-section .text .down-side{
+.aboutme-section>.left-side>.img-wrapper .aboutme-img{
     
 }
 
-.headline-section .text .down-side p{
+.b{
+    background-color: rgba(255, 194, 60, .7);
+}
+
+.portfolio-section{
+    padding: 6rem 0;
+    color: #28282B;
+}
+
+.portfolio-section>.title-section{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.portfolio-section>.title-section>h3{
+    margin-top: 0;
+}
+
+.portfolio-section .portfolios{
     
+}
+
+.portfolio-section .portfolios .portfolio{
+    
+}
+
+.portfolio-section .portfolios .portfolio .portfolio-img{
+    
+}
+
+.c{
+    background-color: rgb(148, 55, 117);
+}
+
+.contact-section{
+    padding: 6rem 0;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-section>.right-side{
+    
+}
+
+.contact-section>.right-side p{
+    font-size: 1.3rem;
+}
+
+.contact-section>.left-side{
+    
+}
+
+.contact-section>.left-side .btn{
+    color: #fff;
+    border-color: rgba(255, 194, 60, 1);
+}
+
+.contact-section>.left-side .btn:hover{
+    color: #28282B;
+    background-color: rgba(255, 194, 60, 1);
 }
