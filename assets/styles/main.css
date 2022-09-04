@@ -74,7 +74,9 @@ a{
 /* aboutme section */
 
 .a{
-    background-color: rgba(49, 8, 123, .6);
+    /* background-color: rgba(49, 8, 123, .6); */
+    background-color: #28282B;
+    box-shadow: .625rem 0 .5rem -.125rem #888;
 }
 
 .aboutme-section{
@@ -158,12 +160,63 @@ a{
 }
 
 .b{
-    background-color: rgba(255, 194, 60, .7);
+    background-color: #28282B;
+    box-shadow: .625rem 0 1.25rem -.125rem #888;
+}
+
+.skill-section{
+    padding: 6rem 0;
+    color: #FDFBF9;
+}
+
+.skill-section>.title-section{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.skill-section>.title-section>h3{
+    margin-top: 0;
+}
+
+.skill-section .skills{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.skill-item{
+    direction: ltr;
+}
+
+.skill-item p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.skill-item p span{
+    
+}
+
+.skill-section .skills>.right-side{
+
+}
+
+.skill-section .skills>.left-side{
+
+}
+
+.c{
+    /* background-color: rgba(255, 194, 60, .7); */
+    background-color: #28282B;
+    box-shadow: .625rem 0 1.25rem -.125rem #888;
 }
 
 .portfolio-section{
     padding: 6rem 0;
-    color: #28282B;
+    color: #FDFBF9;
 }
 
 .portfolio-section>.title-section{
@@ -180,11 +233,23 @@ a{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     gap: 1rem;
+    margin: 0 .2rem;
 }
 
 .portfolio-section .portfolios .portfolio{
     border-radius: 1rem;
     overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 .2rem #28282B;
+}
+
+.portfolio-section .portfolios .portfolio:hover .portfolio-img{
+    transform: scale(1.1);
+    filter: brightness(.5) blur(.125rem);
+}
+
+.portfolio-section .portfolios .portfolio:hover .btn{
+    opacity: 1;
 }
 
 .portfolio-section .portfolios .portfolio:nth-child(1){
@@ -201,13 +266,25 @@ a{
     display: block;
     width: 100%;
     height: 100%;
+    transition: all .2s;
 }
 
-.c{
+.portfolio-section .portfolios .portfolio .btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    opacity: 0;
+    transition: all .2s;
+}
+
+.d{
     /* background-color: rgb(148, 55, 117); */
     background-image: url(/assets/images/contact-img.jpg);
     background-position: center;
     background-size: cover;
+    box-shadow: .625rem 0 1rem -.125rem #888;
 }
 
 .contact-section{
