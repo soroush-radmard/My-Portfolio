@@ -10,16 +10,52 @@
     .container {
         max-width: 720px;
     }
+
+    .headline-section .text{
+        margin-top: 3rem;
+        align-items: flex-end;
+    }
+
+    .headline-section .text .text-wrapper h3{
+        font-size: 2rem;
+    }
+
+    .headline-section .text .text-wrapper h1{
+        font-size: 1rem;
+        display: block;
+    }
+
+    .aboutme-section{
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 6rem;
+    }
+
+    .aboutme-section>.right-side{
+        padding: 0;
+    }
+
+    .aboutme-section>.right-side .tab-section{
+        max-width: 25rem;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     .container {
         max-width: 540px;
     }
+
+    .landing-section{
+        background-position: 50%;
+    }
 }
 
 @media only screen and (max-width: 576px) {
     .container {
         max-width: 100%;
+    }
+    
+    .landing-section{
+        background-position: 30%;
     }
 }
