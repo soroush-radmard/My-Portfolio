@@ -48,6 +48,14 @@
     .landing-section{
         background-position: 50%;
     }
+
+    .portfolio-section .portfolios .portfolio:nth-child(1){
+        grid-column: auto/span 4;
+    }
+    
+    .portfolio-section .portfolios .portfolio:nth-child(2){
+        grid-column: auto/span 2;
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -57,5 +65,23 @@
     
     .landing-section{
         background-position: 30%;
+    }
+
+    .skill-section .skills{
+        flex-direction: column;
+        margin: 0 2rem;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .portfolio-section .portfolios{
+        padding: 0 1rem;
+    }
+
+    .contact-section{
+        flex-direction: column;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        line-height: 2.6rem;
     }
 }
