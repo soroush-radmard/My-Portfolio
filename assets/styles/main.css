@@ -19,6 +19,7 @@ body {
 
 a{
     text-decoration: none;
+    color: inherit;
 }
 
 .container {
@@ -156,12 +157,11 @@ a{
 .aboutme-section>.left-side>.img-wrapper .aboutme-img{
     max-width: 38rem;
     display: block;
-    
 }
 
 .b{
     background-color: #28282B;
-    box-shadow: .625rem 0 1.25rem -.125rem #888;
+    box-shadow: inset 0 .625rem 1.5625rem -.625rem #888;
 }
 
 .skill-section{
@@ -217,9 +217,9 @@ a{
 }
 
 .c{
-    /* background-color: rgba(255, 194, 60, .7); */
     background-color: #28282B;
-    box-shadow: .625rem 0 1.25rem -.125rem #888;
+    /* box-shadow: .625rem 0 1.25rem -.125rem #888; */
+    box-shadow: inset 0 .625rem 1.2rem -.625rem #888;
 }
 
 .portfolio-section{
@@ -262,18 +262,17 @@ a{
 
 .portfolio-section .portfolios .portfolio:nth-child(1){
     grid-column: auto/span 3;
-    grid-row: auto/span 2;
+    grid-row: auto;
 }
 
 .portfolio-section .portfolios .portfolio:nth-child(2){
     grid-column: auto/span 1;
-    grid-row: auto/span 2;
+    grid-row: auto;
 }
 
 .portfolio-section .portfolios .portfolio .portfolio-img{
     display: block;
     width: 100%;
-    height: 100%;
     transition: all .2s;
 }
 
@@ -288,7 +287,6 @@ a{
 }
 
 .d{
-    /* background-color: rgb(148, 55, 117); */
     background-image: url(/assets/images/contact-img.jpg);
     background-position: center;
     background-size: cover;
@@ -325,16 +323,56 @@ a{
     background-color: rgba(255, 194, 60, 1);
 }
 
+.d{
+    padding-bottom: 1rem;
+}
+
 .d .social-networks{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
     color: #FDFBF9;
-    gap: 1.5rem;
-    padding-bottom: 1rem;
+    gap: 2rem;
 }
 
-.d .social-networks i{
-    
+.d .social-networks .item{
+    position: relative;
+    cursor: pointer;
+}
+
+.d .social-networks .item .above{
+    position: absolute;
+    right: -1.8rem;
+    top: -3.5rem;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.d .social-networks .item .above .above-img{
+    width: 5.5rem;
+}
+
+.d .social-networks .item:hover .above{
+    opacity: 1;
+}
+
+.d .social-networks .item i{
+    transition: color .2s;
+}
+
+.d .social-networks .item:hover .instagram{
+    color: #E1306C;
+}
+
+.d .social-networks .item:hover .codepen{
+    color: #404044;
+}
+
+.d .social-networks .item:hover .github{
+    color: #404044;
+}
+
+.d .social-networks .item:hover .linkedin{
+    color: #0A66C2;
 }
