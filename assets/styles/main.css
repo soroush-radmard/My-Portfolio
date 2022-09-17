@@ -123,14 +123,6 @@ a{
     line-height: 1.9rem;
 }
 
-.aboutme-section>.right-side>.tab-section .description-section p{
-    
-}
-
-.aboutme-section>.right-side>.tab-section .button-section{
-    
-}
-
 .btn{
     padding: .5rem 1.3rem;
     border-radius: 1.2rem;
@@ -146,17 +138,111 @@ a{
     color: #fff;
 }
 
-.aboutme-section>.left-side{
-    
-}
-
-.aboutme-section>.left-side>.img-wrapper{
-    
-}
-
 .aboutme-section>.left-side>.img-wrapper .aboutme-img{
     max-width: 38rem;
     display: block;
+}
+
+#overlay.active{
+    filter: brightness(.5);
+    pointer-events: none;
+    user-select: none;
+} 
+
+.popup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1.5rem;
+    background-color: #fdfbf8;
+    border-radius: 1rem;
+    z-index: 10;
+    padding: 2rem;
+    max-width: 45rem;
+    opacity: 0;
+    top: -200%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: opacity 300ms ease-in-out,
+                top 1000ms ease-in-out,
+                transform 1000ms ease-in-out;
+}
+
+.popup.active, #popup-section.active{
+    opacity: 1;
+    top: 70rem;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 300ms cubic-bezier(0.18,0.89,0.43,1.19);
+}
+
+.popup > div{
+    position: relative;
+    top: .265rem;
+    opacity: 0;
+}
+
+.popup.active > div{
+    top: 0;
+    opacity: 1;
+}
+
+.popup.active .body-popup{
+    transition: all 300ms ease-in-out 250ms;
+}
+
+.popup.active .img{
+    transition: all 300ms ease-in-out 300ms;
+}
+
+.popup .header-popup{
+    position: relative;
+    display: block;
+}
+
+.popup .body-popup{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 3.5rem; */
+    border-top: .0625rem solid #888;
+}
+
+.popup .body-popup .text{
+    line-height: 2rem;
+    max-width: 20rem;
+    min-width: 16rem;
+}
+
+.popup .body-popup .img{
+
+}
+
+.popup .body-popup .img .img-popup{
+    max-width: 15rem;
+}
+
+.popup .close-btn{
+    position: absolute;
+    top: -1.3rem;
+    right: -1.5rem;
+}
+
+.popup .close-btn .dismiss-btn{
+    background-color: transparent;
+    cursor: pointer;
+    padding: .6rem .85rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    transition: background-color .2s;
+}
+
+.popup .close-btn .dismiss-btn:hover{
+    /* color: rgb(237, 56, 56);
+    transform: scale(1.3);
+    transition: transform 300ms; */
+    background-color: rgba(192, 192, 192, 0.878);
 }
 
 .b{
@@ -194,10 +280,6 @@ a{
     align-items: center;
     gap: 1rem;
     margin: 0;
-}
-
-.skill-item p span{
-    
 }
 
 .skill-section .skills>.right-side{
@@ -301,16 +383,8 @@ a{
     align-items: center;
 }
 
-.contact-section>.right-side{
-    
-}
-
 .contact-section>.right-side p{
     font-size: 1.3rem;
-}
-
-.contact-section>.left-side{
-    
 }
 
 .contact-section>.left-side .btn{

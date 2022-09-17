@@ -90,4 +90,17 @@
         padding-right: 1rem;
         line-height: 2.6rem;
     }
+
+    .popup .body-popup .text{
+        max-width: 14rem;
+        line-height: 2.75rem;
+    }
+
+    .popup .body-popup h3{
+        text-align: center;
+    }
+
+    .popup .body-popup .img{
+        display: none;
+    }
 }
