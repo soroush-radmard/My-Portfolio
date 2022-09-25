@@ -1,0 +1,106 @@
+/* Project Responsive */
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .headline-section .text{
+        margin-top: 3rem;
+        align-items: flex-end;
+    }
+
+    .headline-section .text .text-wrapper h3{
+        font-size: 2rem;
+    }
+
+    .headline-section .text .text-wrapper h1{
+        font-size: 1rem;
+        display: block;
+    }
+
+    .aboutme-section{
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 6rem;
+    }
+
+    .aboutme-section>.right-side{
+        padding: 0;
+    }
+
+    .aboutme-section>.right-side .tab-section{
+        max-width: 25rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .landing-section{
+        background-position: 50%;
+    }
+
+    .portfolio-section .portfolios .portfolio:nth-child(1){
+        grid-column: auto/span 4;
+    }
+    
+    .portfolio-section .portfolios .portfolio:nth-child(2){
+        grid-column: auto/span 2;
+        max-height: 20rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+    
+    .landing-section{
+        background-position: 30%;
+    }
+
+    .skill-section .skills{
+        flex-direction: column;
+        margin: 0 2rem;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .portfolio-section .portfolios{
+        padding: 0 1rem;
+    }
+
+    .portfolio-section .portfolios .portfolio:nth-child(2){
+        grid-column: auto/span 4;
+        max-height: 16rem;
+    }
+
+    .contact-section{
+        flex-direction: column;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        line-height: 2.6rem;
+    }
+
+    .popup .body-popup .text{
+        max-width: 14rem;
+        line-height: 2.75rem;
+    }
+
+    .popup .body-popup h3{
+        text-align: center;
+    }
+
+    .popup .body-popup .img{
+        display: none;
+    }
+}
