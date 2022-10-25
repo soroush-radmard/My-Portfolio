@@ -4,6 +4,10 @@
     .container {
         max-width: 960px;
     }
+
+    .portfolio-section__carousel{
+        flex-wrap: wrap;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -38,6 +42,10 @@
     .aboutme-section>.right-side .tab-section{
         max-width: 25rem;
     }
+
+    .portfolio-section__carousel{
+        justify-content: start;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -50,7 +58,6 @@
     }
 
     .portfolio-section__carousel{
-        flex-wrap: wrap;
         justify-content: center;
     }
 }

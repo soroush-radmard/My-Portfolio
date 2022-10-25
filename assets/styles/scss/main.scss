@@ -106,7 +106,7 @@ a{
 
 // LANDING SECTION
 .landing-section{
-    background-image: url(/assets/images/landing-img.png);
+    background-image: url(/assets/images/landing-img.webp);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -265,7 +265,7 @@ a{
     }
 
     &__carousel{
-        @include FlexBox(start, center, row);
+        @include FlexBox(center, center, row);
         gap: 1rem;
     }
     
@@ -330,7 +330,7 @@ a{
 
 // CONTACT SECTION
 .d{
-    background-image: url(/assets/images/contact-img.jpg);
+    background-image: url(/assets/images/contact-img.webp);
     background-position: center;
     background-size: cover;
     box-shadow: .625rem 0 1rem -.125rem #888;

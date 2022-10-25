@@ -115,7 +115,7 @@ a {
 }
 
 .landing-section {
-  background-image: url(/assets/images/landing-img.png);
+  background-image: url(/assets/images/landing-img.webp);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -262,7 +262,7 @@ a {
 }
 .portfolio-section__carousel {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   gap: 1rem;
@@ -319,7 +319,7 @@ a {
 }
 
 .d {
-  background-image: url(/assets/images/contact-img.jpg);
+  background-image: url(/assets/images/contact-img.webp);
   background-position: center;
   background-size: cover;
   box-shadow: 0.625rem 0 1rem -0.125rem #888;
