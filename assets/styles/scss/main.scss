@@ -1,10 +1,9 @@
-@import "Main-Styles";
-@import "Tag-Styles";
-@import "Button-Styles";
-@import "Variables";
-@import "HoverEffects";
-@import "Layout-Styles";
-@import "Color";
+@import "mixin/Main-Styles";
+@import "mixin/Tag-Styles";
+@import "mixin/Button-Styles";
+@import "mixin/HoverEffects";
+@import "mixin/Layout-Styles";
+@import "variables/Color";
 
 body{
     @include BodyStyle;
@@ -45,7 +44,7 @@ a{
     }
 
     .body-popup{
-        @include FlexBox(space-between, center, row);
+        @include FlexBox(space-between, center, row, 0);
         border-top: .0625rem solid #888;
     }
 
@@ -121,7 +120,7 @@ a{
 
     .text{
         margin-top: 3rem;
-        @include FlexBox(flex-start, center, row);
+        @include FlexBox(flex-start, center, row, 0);
         height: 85vh;
     }
 
@@ -154,15 +153,14 @@ a{
 }
 
 .aboutme-section{
-    @include FlexBox(space-between, center, row);
+    @include FlexBox(space-between, center, row, 0);
 
     .right-side{
         padding: 6rem 0;
     }
 
     .right-side .tab-section{
-        @include FlexBox(space-around, stretch, column);
-        gap: 1rem;
+        @include FlexBox(space-around, stretch, column, 1rem);
         padding: 1.5rem 2rem;
         backdrop-filter: blur(.3125rem) saturate(100%);
         background-color: rgba(255, 255, 255, 0.6);
@@ -217,7 +215,7 @@ a{
     }
 
     .skills{
-        @include FlexBox(space-around, stretch, row);
+        @include FlexBox(space-around, stretch, row, 0);
     }
 
     .skill-item{
@@ -225,20 +223,17 @@ a{
     }
     
     .skill-item p{
-        @include FlexBox(space-between, center, row);
-        gap: 1rem;
+        @include FlexBox(space-between, center, row, 1rem);
         margin: 0;
     }
 
     .skills{
         .right-side{
-            @include FlexBox(start, stretch, column);
-            gap: 2rem;
+            @include FlexBox(start, stretch, column, 2rem);
         } 
         
         .left-side{
-            @include FlexBox(end, stretch, column);
-            gap: 2rem;
+            @include FlexBox(end, stretch, column, 2rem);
         }
     }
 
@@ -265,8 +260,7 @@ a{
     }
 
     &__carousel{
-        @include FlexBox(center, center, row);
-        gap: 1rem;
+        @include FlexBox(center, center, row, 1rem);
     }
     
     &__card{
@@ -275,7 +269,7 @@ a{
         position: relative;
         text-align: center;
         border-radius: .9rem;
-        @include FlexBox(center, stretch, column);
+        @include FlexBox(center, stretch, column, 0);
         background-color: #cecccc;
         color: $BlackMatteColor;
         padding: 1rem;
@@ -337,10 +331,9 @@ a{
     padding-bottom: 1rem;
 
     .social-networks{
-        @include FlexBox(center, center, row);
+        @include FlexBox(center, center, row, 2rem);
         font-size: 2rem;
         color: $WhiteMatteColor;
-        gap: 2rem;
     }
 
     .social-networks .item{
@@ -389,7 +382,7 @@ a{
 .contact-section{
     padding: 6rem 0;
     color: $WhiteColor;
-    @include FlexBox(space-around, center, row);
+    @include FlexBox(space-around, center, row, 0);
 
     .right-side p{
         font-size: 1.3rem;

@@ -69,6 +69,7 @@ a {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  gap: 0;
   border-top: 0.0625rem solid #888;
 }
 .popup .body-popup .text {
@@ -131,6 +132,7 @@ a {
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
+  gap: 0;
   height: 85vh;
 }
 .headline-section .text-wrapper {
@@ -159,6 +161,7 @@ a {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  gap: 0;
 }
 .aboutme-section .right-side {
   padding: 6rem 0;
@@ -217,6 +220,7 @@ a {
   justify-content: space-around;
   align-items: stretch;
   flex-direction: row;
+  gap: 0;
 }
 .skill-section .skill-item {
   direction: ltr;
@@ -276,6 +280,7 @@ a {
   justify-content: center;
   align-items: stretch;
   flex-direction: column;
+  gap: 0;
   background-color: #cecccc;
   color: #28282b;
   padding: 1rem;
@@ -330,9 +335,9 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  gap: 2rem;
   font-size: 2rem;
   color: #fdfbf8;
-  gap: 2rem;
 }
 .d .social-networks .item {
   position: relative;
@@ -374,6 +379,7 @@ a {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
+  gap: 0;
 }
 .contact-section .right-side p {
   font-size: 1.3rem;
