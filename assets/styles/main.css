@@ -1,0 +1,70 @@
+/* Main */
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    overflow: hidden;
+    direction: rtl;
+    font-family: "samim";
+}
+
+a{
+    text-decoration: none;
+}
+
+h3,h1{
+    color: #326789;
+}
+
+.container {
+    max-width: 70rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow: hidden;
+}
+
+.landing-section{
+    background-image: url(/assets/images/landing-img3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.headline-section{
+
+}
+
+.headline-section .text{
+    
+}
+
+.headline-section .text .up-side{
+    
+}
+
+.headline-section .text .up-side h3{
+    
+}
+
+.headline-section .text .up-side h1{
+    
+}
+
+.headline-section .text .down-side{
+    
+}
+
+.headline-section .text .down-side p{
+    
+}
