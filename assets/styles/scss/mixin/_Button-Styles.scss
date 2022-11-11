@@ -1,0 +1,8 @@
+@mixin Button-Style {
+    padding: .5rem 1.3rem;
+    border-radius: 1.2rem;
+    background-color: transparent;
+    outline: none;
+    border: .125rem solid #100720;
+    transition: background-color .2s, color .2s;
+}
